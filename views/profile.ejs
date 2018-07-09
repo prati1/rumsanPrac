@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  	<table class="table table-striped">
+    <% profiles.forEach(function(profile,i){ %>
+    <tr>
+	<th>Name:</th>
+	<td><%= profile.name %></td>
+	</tr>
+	<tr>
+	<th>College:</th>
+	<td><%= profile.college %></td>
+	</tr>
+	<tr>
+	<th>Course:</th>
+	<td><%= profile.course %></td>
+	</tr>
+	<tr>
+	<th>Semester:</th>
+	<td><%= profile.semester %></td>
+	</tr>
+	<tr>
+	<th>Contact No:</th>
+	<td><%= profile.contact %></td>
+	</tr>
+	<th>Email Address:</th>
+	<td><%= profile.email %></td>
+	</tr>
+	<tr>
+	<th>Facebook Link:</th>
+	<td><a href= "https://www.facebook.com/pratibha.stha"><%= profile.fb %></a></td>
+	</tr>
+	<tr>
+	</tr>
+	<td><a href="/update/<%= profile._id %>">Update</a></td>
+	<td><a href="/delete/<%= profile._id %>">Delete</a></td>
+	<% }) %>
+
+    </table>
+
+
+
+  </body>
+</html>
+

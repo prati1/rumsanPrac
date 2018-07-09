@@ -1,0 +1,33 @@
+<html>
+<head>
+	<link rel='stylesheet' href='/stylesheets/style.css' />
+   <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+	<form action="/update" method="post">
+	<h1>EDIT</h1><br/>
+	<input type="hidden" name="_id" value="<%= profile._id %>" id="id">
+	Name:<br/>
+	<input type="text" name ="name" value="<%= profile.name %>"><br/><br>
+	College:<br/>
+	<input type="text" name = "college" value="<%= profile.college %>"><br/><br/>
+	Course:<br/>
+	<input type="text" name = "course" value="<%= profile.course %>"><br/><br/>
+	Semester:<br/>
+	<input type="number" name = "semester" value="<%= profile.semester %>"><br/><br/>
+	Contact No:<br/>
+	<input type="number" name = "contact" value="<%= profile.contact %>"><br/><br/>
+	Email id:<br/>
+	<input type="email" name = "email" value="<%= profile.email %>"><br/><br/>
+	Facebook link:<br/>
+	<input type="url" name = "fb" value="<%= profile.fb %>"><br/><br/>
+	Select your photo:<br/>
+	<input type="file" name = "pdffile" value = "default image"><br/>
+	<br/>
+	<button type = "submit" class="btn btn-primary">Update</button>
+	<br/>
+	<a id="delete" class="btn btn-danger" href="/updateProfile/delete/<%= profile._id %>">Delete</a>
+	</form>
+</body>
+</html>

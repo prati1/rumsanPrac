@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <a href="/profile">Link to profile</a>
+    <form action="/insert" method="post">
+		Name:<br/>
+		<input type="text" name ="name" placeholder="Name"><br/><br>
+		College:<br/>
+		<input type="text" name = "college" placeholder="College"><br/><br/>
+		Course:<br/>
+		<input type="text" name = "course" placeholder="Course"><br/><br/>
+		Semester:<br/>
+		<input type="number" name = "semester" placeholder="semester"><br/><br/>
+		Contact No:<br/>
+		<input type="number" name = "contact" placeholder="contact no"><br/><br/>
+		Email id:<br/>
+		<input type="email" name = "email" placeholder="email"><br/><br/>
+		Facebook link:<br/>
+		<input type="url" name = "fb" placeholder="facebook link"><br/><br/>
+		<!-- Select your photo:<br/>
+		<input type="file" name = "pdffile" ><br/>
+		<br/> -->
+		<input type = "submit" name ="submit">
+
+
+	</form>
+
+
+
+  </body>
+</html>
